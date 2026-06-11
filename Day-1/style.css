@@ -120,14 +120,10 @@ body{
 }
 
 .short{
-    height:180px;
-}
-
-.medium{
     height:260px;
 }
 
-.tall{
+.medium{
     height:350px;
 }
 
