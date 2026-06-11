@@ -8,7 +8,6 @@ function drawBoard() {
     boardDiv.innerHTML = "";
     board.forEach((cell, index) => {
         const div = document.createElement("div");
-        // Applied styling classes based on the current cell state
         if (cell === "") {
             div.className = "cell empty";
         } else {

@@ -38,10 +38,6 @@ select {
     cursor: pointer;
     outline: none;
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%237a7a7a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 16px;
 }
 .board {
     display: grid;
@@ -62,8 +58,6 @@ select {
     transition: background-color 0.2s, transform 0.1s;
     user-select: none;
 }
-
-/* Dynamic styling classes injected by JS based on piece type */
 .cell.empty {
     background: #e8e6e2;
 }
@@ -78,7 +72,6 @@ select {
     background: #ffebe3;
     color: #9a3412;
 }
-
 #status {
     color: #555555;
     font-size: 16px;
