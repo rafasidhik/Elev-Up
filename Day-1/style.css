@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f5f7fa;
+    background:#f5f3f3;
 }
 
 /* NAVBAR */
@@ -140,8 +140,8 @@ body{
 
 .load-more-btn{
     border:none;
-    background:#0077ff;
-    color:white;
+    background:#ffffff;
+    color:rgb(0, 0, 0);
     padding:14px 30px;
     border-radius:30px;
     font-size:16px;
@@ -151,7 +151,7 @@ body{
 
 .load-more-btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(0,119,255,0.3);
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .load-more-btn i{
