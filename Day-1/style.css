@@ -13,24 +13,20 @@ body{
 
 .navbar{
     background:#ffffff;
-    width:100%;
-    padding:2% 5%;
+    padding:20px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
 .logo{
-    font-size:clamp(20px,2vw,24px);
+    font-size:24px;
     font-weight:700;
 }
 
 .nav-links{
     display:flex;
-    flex-wrap:wrap;
     list-style:none;
     gap:30px;
 }
@@ -69,13 +65,14 @@ body{
 }
 
 .hero h1{
-    font-size:clamp(1.8rem,4vw,2.5rem);
+    font-size:38px;
     color:#222;
     margin-bottom:30px;
 }
 
 .search-box{
-    width:min(90%,700px);
+    width:70%;
+    max-width:700px;
     margin:auto;
     background:white;
     border-radius:50px;
@@ -98,7 +95,7 @@ body{
 .gallery{
     width:90%;
     margin:auto;
-    columns:300px;
+    column-count:3;
     column-gap:20px;
 }
 
@@ -144,7 +141,7 @@ body{
 .load-more-btn{
     border:none;
     background:#ffffff;
-    color:#000000;
+    color:rgb(0, 0, 0);
     padding:14px 30px;
     border-radius:30px;
     font-size:16px;
@@ -165,18 +162,15 @@ body{
 
 footer{
     background:white;
-    padding:25px 5%;
+    padding:25px 60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
-    gap:15px;
     border-top:1px solid #ddd;
 }
 
 .footer-links{
     display:flex;
-    flex-wrap:wrap;
     gap:25px;
 }
 
@@ -187,4 +181,53 @@ footer{
 
 .footer-links a:hover{
     color:#0077ff;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .gallery{
+        column-count:2;
+    }
+
+    .navbar{
+        padding:20px;
+    }
+
+    .search-box{
+        width:90%;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .gallery{
+        column-count:1;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .footer-links{
+        flex-direction:column;
+        gap:10px;
+    }
 }
