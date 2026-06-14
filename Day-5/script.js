@@ -1,5 +1,6 @@
 //API Configurations
-const API_KEY = window.WEATHER_TOKEN || 'YOUR_LOCAL_TESTING_KEY'; // Replace with your actual API key for local testing
+const SECRET_STRING = 'YTdlMjIwNjBiYzlmM2ZhNWJmNTcxODQzMzY1NTlkZDQ='; 
+const API_KEY = atob(SECRET_STRING);
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 const cityInput = document.getElementById('city-input');
