@@ -1,7 +1,4 @@
-//API Configurations
-const SECRET_STRING = 'YTdlMjIwNjBiYzlmM2ZhNWJmNTcxODQzMzY1NTlkZDQ='; 
-const API_KEY = atob(SECRET_STRING);
-const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
+const API_ENDPOINT = '/api/weather';
 
 const cityInput = document.getElementById('city-input');
 const searchBtn = document.getElementById('search-btn');
@@ -27,7 +24,7 @@ function processSearchInput() {
     }
 }
 async function fetchWeatherData(city) {
-    const endpoint = `${BASE_URL}?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`;
+    const endpoint = `${API_ENDPOINT}?city=${encodeURIComponent(city)}`;
     try {
         const response = await fetch(endpoint);
         if (!response.ok) {
@@ -39,6 +36,7 @@ async function fetchWeatherData(city) {
         renderErrorState();
     }
 }
+
 function updateWeatherUI(data) {
     errorMsg.style.display = 'none';
     const cityName = data.name;
