@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="weather-app">
+        <header class="app-header">
+            <h1>Weather App</h1>
+            <p>Enter a city to view current conditions.</p>
+        </header>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off" aria-label="Search city">
+            <button id="search-btn" type="button">Search</button>
+        </div>
+        <p class="error-message" id="error-msg" role="alert">Could not find that city. Please try again.</p>
+        <section class="weather-card" id="weather-info">
+            <h2 id="location">---</h2>
+            <div class="weather-main">
+                <div class="temp-box">
+                    <span id="temperature">--</span><span class="degree-symbol">°C</span>
+                </div>
+                <div class="condition-box">
+                    <img id="weather-icon" src="" alt="Weather condition icon" style="display: none;">
+                    <p id="description">---</p>
+                </div>
+            </div>
+            <div class="details-grid">
+                <div class="detail-panel">
+                    <span class="panel-icon">💧</span>
+                    <div class="panel-text">
+                        <span class="panel-label">Humidity</span>
+                        <span id="humidity" class="panel-value">--</span>
+                    </div>
+                </div>
+                <div class="detail-panel">
+                    <span class="panel-icon">💨</span>
+                    <div class="panel-text">
+                        <span class="panel-label">Wind Speed</span>
+                        <span id="wind-speed" class="panel-value">--</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
