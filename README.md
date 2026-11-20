@@ -1,4 +1,4 @@
-# Elev-Up – Web Development Sprint
+# Elev-Up 
 
 Practical web development projects completed as part of **ElevUp by μLearn MCE** – an intensive 10-day sprint diving into Web Development.
 
@@ -18,7 +18,7 @@ This repository documents my practical web development projects completed throug
 
 | # | Project | Description | Tech Stack | Links |
 |:---:|---|---|---|---|
-| 01 | [Portraits - Search Engine](./search-engine) | Pinterest-inspired photo gallery and search interface featuring a responsive masonry grid and hover animations. | HTML5, CSS3, Font Awesome | [Live Demo](https://search-engine.vercel.app/) |
+| 01 | [Portraits - Search Engine](./search-engine) | Pinterest-inspired photo gallery and search interface featuring a responsive masonry grid and hover animations. | HTML5, CSS3, Font Awesome | [Live Demo](https://search-eng1ne.vercel.app/) |
 | 02 | [Tic Tac Toe](./tic-tac-toe) | Classic interactive 3×3 game supporting Player vs Player and Player vs Computer (AI), turn tracking, winner/draw detection, and restart. | HTML5, CSS3, JavaScript | [Live Demo](https://t1c-t4c-toe.vercel.app/) |
 | 03 | [Personal Budget Tracker](./budget-tracker) | Personal finance dashboard with real-time budget calculations, categorized transaction logging, and local storage persistence. | HTML5, CSS3, JavaScript | [Live Demo](https://budget-tr4cker.vercel.app/) |
 | 04 | [Login & Registration](./login-registration) | Clean authentication interface featuring separate login and signup views with comprehensive regex and password validation. | HTML5, CSS3, JavaScript | [Live Demo](https://log1n-form.vercel.app/) |

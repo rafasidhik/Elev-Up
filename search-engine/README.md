@@ -52,4 +52,4 @@ Simply open `index.html` in any web browser.
 ## 🌐 Live Demo
 
 Check out the live deployed project:  
-🔗 [Live Demo](https://search-engine.vercel.app/)
+🔗 [Live Demo](https://search-eng1ne.vercel.app/)
