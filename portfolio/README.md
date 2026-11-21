@@ -53,4 +53,4 @@ Open `index.html` in your web browser.
 ## 🌐 Live Demo
 
 Check out the live deployed project:  
-🔗 [Live Demo](https://portifol1o.vercel.app/)
+🔗 [Live Demo](https://portfol1o.vercel.app/)
