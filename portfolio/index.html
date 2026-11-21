@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rafa Fathima M K — Web Developer Portfolio. Clean, minimal, and responsive web applications built with semantic HTML, modern CSS, JavaScript, and React.">
+  <meta name="author" content="Rafa Fathima M K">
+  <meta name="theme-color" content="#F7F7F5">
+  <title>Rafa Fathima M K — Web Developer</title>
+
+  <!-- Typography: Manrope (Headings) and Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Minimal Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand" aria-label="Rafa Fathima - Home">
+        <span class="brand-name">Rafa Fathima M K</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <div class="mobile-nav-top">
+          <span class="mobile-nav-title">Menu</span>
+          <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="eyebrow-label">WEB DEVELOPER</div>
+          <h1 class="hero-name">Rafa Fathima M K</h1>
+          <p class="hero-tagline">
+            Building clean, responsive websites and accessible user interfaces.
+          </p>
+          <p class="hero-description">
+            Passionate about modern web standards, semantic HTML, responsive layout systems, and purposeful user experiences. Focused on turning functional logic into clean, usable web applications.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">ABOUT</div>
+          <h2 class="section-heading">Focused on frontend craft and usable design.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-col">
+            <p class="lead-text">
+              I am a web developer with a dedicated interest in frontend development, creating responsive websites, and exploring modern web technologies.
+            </p>
+            <p>
+              My approach focuses on solid browser fundamentals: organizing content with clean semantic HTML, crafting responsive multi-column layouts with modern CSS Grid and Flexbox, and writing maintainable JavaScript to handle dynamic interactivity, validation, and API communications.
+            </p>
+            <p>
+              Across practical web projects, I have built interfaces ranging from responsive galleries and browser games to serverless weather dashboards and full-stack PostgreSQL applications. I focus on creating clean, intuitive digital experiences that work reliably on every screen.
+            </p>
+          </div>
+
+          <div class="about-focus-col">
+            <div class="focus-card">
+              <h3 class="focus-title">Core Principles</h3>
+              <ul class="focus-list">
+                <li>
+                  <strong>Semantic &amp; Accessible</strong>
+                  <span>Meaningful markup structured for readability and screen reader usability.</span>
+                </li>
+                <li>
+                  <strong>Responsive by Default</strong>
+                  <span>Fluid layouts adapting naturally from 320px mobile viewports to large screens.</span>
+                </li>
+                <li>
+                  <strong>Clean Functional Logic</strong>
+                  <span>Defensive, event-driven JavaScript, robust regex validation, and state flow.</span>
+                </li>
+                <li>
+                  <strong>Content-First Simplicity</strong>
+                  <span>Purposeful typography and spacing without decorative distractions.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">SKILLS</div>
+          <h2 class="section-heading">Supported technologies &amp; tools.</h2>
+          <p class="section-subheading">
+            Only technologies actively utilized across the completed practical web projects.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Structure -->
+          <div class="skill-card">
+            <span class="skill-category">Structure</span>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">
+              Semantic page structure, accessible form controls, validation attributes, audio/video players, and Web Storage APIs.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic HTML</span>
+              <span class="tag">Form Validation</span>
+              <span class="tag">LocalStorage</span>
+              <span class="tag">Media Elements</span>
+            </div>
+          </div>
+
+          <!-- Styling -->
+          <div class="skill-card">
+            <span class="skill-category">Styling</span>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">
+              Responsive layout architecture using CSS Grid and Flexbox, custom properties, media queries, and transition states.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">CSS Grid</span>
+              <span class="tag">Flexbox</span>
+              <span class="tag">Custom Properties</span>
+              <span class="tag">Responsive Design</span>
+              <span class="tag">CSS Modules</span>
+            </div>
+          </div>
+
+          <!-- Programming -->
+          <div class="skill-card">
+            <span class="skill-category">Programming</span>
+            <h3 class="skill-name">JavaScript (ES6+)</h3>
+            <p class="skill-desc">
+              DOM manipulation, event delegation, asynchronous programming with Fetch and Promises, regex validation, and game logic.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">DOM API</span>
+              <span class="tag">Async / Fetch</span>
+              <span class="tag">Regex Validation</span>
+              <span class="tag">Game Logic</span>
+              <span class="tag">JSON APIs</span>
+            </div>
+          </div>
+
+          <!-- Frontend Libraries -->
+          <div class="skill-card">
+            <span class="skill-category">Framework</span>
+            <h3 class="skill-name">React 19</h3>
+            <p class="skill-desc">
+              Component-driven interfaces, custom hooks, state management, client-side routing, and optimistic UI updates.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Functional Components</span>
+              <span class="tag">Custom Hooks</span>
+              <span class="tag">React Router v7</span>
+              <span class="tag">Lucide Icons</span>
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="skill-card">
+            <span class="skill-category">Backend &amp; API</span>
+            <h3 class="skill-name">Node &amp; PostgreSQL</h3>
+            <p class="skill-desc">
+              Express.js RESTful API routing, serverless proxy functions on Vercel, and Neon PostgreSQL database integration.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express REST</span>
+              <span class="tag">Neon PostgreSQL</span>
+              <span class="tag">Serverless Functions</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card">
+            <span class="skill-category">Workflow</span>
+            <h3 class="skill-name">Tools &amp; Environment</h3>
+            <p class="skill-desc">
+              Git version control, GitHub collaboration, VS Code development environment, Vite build tooling, and package managers.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Vite</span>
+              <span class="tag">pnpm / npm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">PROJECTS</div>
+          <h2 class="section-heading">Completed web projects.</h2>
+          <p class="section-subheading">
+            Completed projects demonstrating progression from foundational HTML/CSS to dynamic, API-driven web applications.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-search.svg" alt="Portraits Search Engine interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Photo Gallery &amp; Search</span>
+              </div>
+              <h3 class="project-title">Portraits - Search Engine</h3>
+              <p class="project-desc">
+                Pinterest-inspired photo gallery and search interface featuring a responsive multi-column masonry grid, hero search bar, and hover animations.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">Masonry Grid</span>
+                <span class="tech-pill">Font Awesome</span>
+              </div>
+              <div class="project-links">
+                <a href="https://search-eng1ne.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/search-engine" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-tictactoe.svg" alt="Tic Tac Toe game interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Browser Game</span>
+              </div>
+              <h3 class="project-title">Tic Tac Toe</h3>
+              <p class="project-desc">
+                Classic interactive 3×3 game supporting Player vs Player and Player vs Computer (AI) modes, real-time turn tracking, winner/draw detection, and restart.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6)</span>
+                <span class="tech-pill">Game Logic</span>
+              </div>
+              <div class="project-links">
+                <a href="https://t1c-t4c-toe.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/tic-tac-toe" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-budget.svg" alt="Personal Budget and Expense Tracker preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Finance Dashboard</span>
+              </div>
+              <h3 class="project-title">Personal Budget Tracker</h3>
+              <p class="project-desc">
+                Personal finance dashboard with real-time budget calculations, categorized transaction logging, balance tracking, and local storage persistence.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6)</span>
+                <span class="tech-pill">LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="https://budget-tr4cker.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/budget-tracker" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-login.svg" alt="Login and Registration interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Authentication &amp; Forms</span>
+              </div>
+              <h3 class="project-title">Login &amp; Registration</h3>
+              <p class="project-desc">
+                Clean authentication interface featuring dedicated login and signup views with comprehensive regex email validation and strong password rules.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6)</span>
+                <span class="tech-pill">RegEx</span>
+              </div>
+              <div class="project-links">
+                <a href="https://log1n-form.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/login-registration" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-weather.svg" alt="Weather App interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">API &amp; Serverless</span>
+              </div>
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-desc">
+                Real-time global weather dashboard fetching current temperatures, humidity, and wind conditions via OpenWeatherMap API and a secure Vercel serverless proxy.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">OpenWeatherMap</span>
+                <span class="tech-pill">Serverless</span>
+              </div>
+              <div class="project-links">
+                <a href="https://weather-4pp.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/weather-app" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 06 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-movies.svg" alt="Movie Explorer interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Entertainment &amp; Search</span>
+              </div>
+              <h3 class="project-title">Movie Explorer</h3>
+              <p class="project-desc">
+                Responsive movie browsing application with OMDb API search, poster displays, IMDb ratings, and an interactive details modal.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript (ES6)</span>
+                <span class="tech-pill">OMDb API</span>
+                <span class="tech-pill">Modals</span>
+              </div>
+              <div class="project-links">
+                <a href="https://movie-l1sting.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/movie-listing" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 07 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-todo.svg" alt="React To-Do List interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">State Management</span>
+              </div>
+              <h3 class="project-title">React To-Do List</h3>
+              <p class="project-desc">
+                Interactive task management dashboard with inline editing, dynamic status filters, deletion confirmations, live stats counter, and local storage persistence.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Vite</span>
+                <span class="tech-pill">CSS Modules</span>
+                <span class="tech-pill">Lucide React</span>
+                <span class="tech-pill">LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="https://t0d0-l1st.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/todo-list" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 08 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-youtube.svg" alt="YouTube Clone interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Video Streaming</span>
+              </div>
+              <h3 class="project-title">YouTube Clone (ViewTube)</h3>
+              <p class="project-desc">
+                Video streaming platform interface with HTML5 video player, dynamic search, category filtering chips, channel subscriptions, and watch history.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Vite</span>
+                <span class="tech-pill">React Router v7</span>
+                <span class="tech-pill">Lucide React</span>
+              </div>
+              <div class="project-links">
+                <a href="https://viewtube-yt.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/youtube-clone" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 09 -->
+          <article class="project-card">
+            <div class="project-preview-frame">
+              <img src="./assets/cover-notes.svg" alt="Notes Management System NoteNest interface preview" class="project-preview-img" loading="lazy" width="800" height="450">
+            </div>
+            <div class="project-card-body">
+              <div class="project-eyebrow">
+                <span class="project-cat">Full-Stack Application</span>
+              </div>
+              <h3 class="project-title">Notes System (NoteNest)</h3>
+              <p class="project-desc">
+                Full-stack task and notes dashboard with real-time note creation, editing, safe deletion confirmations, and live search backed by Neon PostgreSQL.
+              </p>
+              <div class="project-tech-list">
+                <span class="tech-pill">React 19</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express</span>
+                <span class="tech-pill">Neon PostgreSQL</span>
+                <span class="tech-pill">Axios</span>
+              </div>
+              <div class="project-links">
+                <a href="https://n0tes-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <span>Live Demo</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+                </a>
+                <a href="https://github.com/rafasidhik/Elev-Up/tree/main/notes-management-system" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                  <span>GitHub</span>
+                  <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">CONTACT</div>
+          <h2 class="section-heading">Get in touch.</h2>
+          <p class="section-subheading">
+            Feel free to reach out to discuss frontend development, project feedback, or web engineering opportunities.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <div class="contact-info-card">
+            <span class="contact-type">Email</span>
+            <a href="mailto:rafasidhik@gmail.com" class="contact-value">rafasidhik@gmail.com</a>
+            <p class="contact-desc">
+              Direct email for inquiries and web development discussions.
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <span class="contact-type">GitHub</span>
+            <a href="https://github.com/rafasidhik" target="_blank" rel="noopener noreferrer" class="contact-value">
+              <span>github.com/rafasidhik</span>
+              <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+            </a>
+            <p class="contact-desc">
+              Browse repositories and source code for all completed web projects.
+            </p>
+          </div>
+
+          <div class="contact-info-card">
+            <span class="contact-type">LinkedIn</span>
+            <a href="https://linkedin.com/in/rafasidhik" target="_blank" rel="noopener noreferrer" class="contact-value">
+              <span>linkedin.com/in/rafasidhik</span>
+              <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"/></svg>
+            </a>
+            <p class="contact-desc">
+              Connect professionally and follow web engineering updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> Rafa Fathima M K. Built with clean HTML, CSS, and JavaScript.
+      </p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top of page">Back to top &uarr;</a>
+    </div>
+  </footer>
+</body>
+</html>
