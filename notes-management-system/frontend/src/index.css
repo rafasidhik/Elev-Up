@@ -1,0 +1,34 @@
+:root {
+  --nn-primary: #635BDB;
+  --nn-bg: #F8F9FC;
+  --nn-cards: #FFFFFF;
+  --nn-text: #20212B;
+  --nn-secondary-text: #77798A;
+  --nn-border: #E8E9F0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--nn-bg);
+  color: var(--nn-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea {
+  font-family: inherit;
+}
