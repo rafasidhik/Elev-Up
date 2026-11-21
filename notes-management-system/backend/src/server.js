@@ -11,11 +11,17 @@ const PORT = process.env.PORT || 5000;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 const allowedOrigins = FRONTEND_URL
   ? FRONTEND_URL.split(',').map((url) => url.trim().replace(/\/+$/, ''))
-  : null;
+  : [];
 
-const corsOptions = allowedOrigins
-  ? { origin: allowedOrigins.length === 1 ? allowedOrigins[0] : allowedOrigins, credentials: true }
-  : {};
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes('*') || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
+      return callback(null, true);
+    }
+    return callback(null, true);
+  },
+  credentials: true
+};
 
 app.use(cors(corsOptions));
 app.use(express.json());

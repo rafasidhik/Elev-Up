@@ -1,7 +1,13 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
-const API_URL = API_BASE.endsWith('/notes') ? API_BASE : `${API_BASE}/notes`;
+const rawBase = (import.meta.env.VITE_API_URL || '/api').trim().replace(/\/+$/, '');
+const API_URL = rawBase.endsWith('/api/notes')
+  ? rawBase
+  : rawBase.endsWith('/notes')
+  ? rawBase
+  : rawBase.endsWith('/api')
+  ? `${rawBase}/notes`
+  : `${rawBase}/api/notes`;
 
 export const formatDate = (dateString) => {
   if (!dateString) return '';
